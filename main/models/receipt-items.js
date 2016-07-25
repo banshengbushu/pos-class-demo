@@ -7,6 +7,25 @@ class ReceiptItem {
         this.saved = saved;
         this.subtotal = subtotal;
     }
+
+    getName() {
+            return this.cartItem.getName();
+          }
+      getBarcode() {
+            return this.cartItem.getBarcode();
+          }
+
+      getUnit() {
+          return this.cartItem.getUnit();
+      }
+
+      getPrice() {
+            return this.cartItem.getPrice();
+          }
+
+      getCount() {
+            return this.cartItem.count;
+          }
     static buildReceiptItems(cartItems, allPromotions) {
         return cartItems.map(cartItem => {
 
