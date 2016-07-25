@@ -18,6 +18,9 @@ class CartItem {
     getUnit(){
         return this.item.unit;
     }
+    getSubtotal(){
+        return this.item.price * this.count;
+    }
     static buildCartItems(tags, allItems) {
 
         const cartItems = [];
